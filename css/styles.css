@@ -12701,7 +12701,7 @@ p {
   }
 
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 4rem;
     transition: height 0.3s ease-in-out;
   }
 
@@ -12717,7 +12717,7 @@ p {
 
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 3rem;
   }
 
   #mainNav .navbar-nav .nav-item {
@@ -12732,7 +12732,7 @@ p {
 .background {
   position: absolute;
   background-color: #000000b8;
-  height: 100vh ;
+  height: 100vh;
   width: 100%;
   top: 0;
 }
