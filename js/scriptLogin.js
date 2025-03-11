@@ -18,3 +18,24 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+
+
+
+
+
+  document.getElementById("togglePassword").addEventListener("click", function () {
+	let passwordInput = document.getElementById("passwordLogin");
+	let togglePassword = document.getElementById("togglePassword");
+
+	if (passwordInput.type === "password") {
+		passwordInput.type = "text";
+		togglePassword.style.backgroundImage = "url('/assets/img/loginRegister/oculto.png')";
+	} else {
+		passwordInput.type = "password";
+		togglePassword.style.backgroundImage = "url('/assets/img/loginRegister/ojo.png')";
+	}
+});
+
+
+
+
