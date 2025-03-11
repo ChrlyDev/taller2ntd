@@ -1,0 +1,18 @@
+
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "julianelmaspapuh",
+            "password": "muysegura",
+            "email": "emailmeporfi@gmail.com",
+
+            "historial_tutorias": [
+                {
+                    "id_tutoria": 1
+                }
+                
+            ]
+        }
+    ]
+}
