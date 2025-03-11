@@ -45,6 +45,7 @@ body{
 
 form{
 	width: 360px;
+	margin-bottom: 150px;
 }
 
 .login-content img{
@@ -180,8 +181,19 @@ a:hover{
 .btn:hover{
 	background-position: right;
 }
-
-
+#volver{
+	
+	width: 130px !important;
+	margin:20px 20px auto auto;
+}
+#registrarse{
+	margin-left: 85px;
+	margin-top: 50px;
+	width: 50% !important;
+}
+#login{
+	margin-top: 60px;
+}
 @media screen and (max-width: 1050px){
 	.container{
 		grid-gap: 5rem;
