@@ -4,6 +4,10 @@ const emailLogin = document.getElementById("emailLogin");
 const passwordLogin = document.getElementById("passwordLogin");
 const login = document.getElementById("login");
 
+
+const filePath = "../data/users.json";
+
+
 function addcl() {
   let parent = this.parentNode.parentNode;
   parent.classList.add("focus");
@@ -39,22 +43,21 @@ document
 
 
   function cargarJsonUser() {
-	fetch("../data/users.json")
+	fetch(filePath)
 	  .then(function (res) {
 		return res.json();
 	  })
 	  .then(function (data) {
 		users.push(...data.users); 
-		console.log(users); 
+	
 	  })
 	  .catch(error => console.error("Error al cargar el JSON:", error));
   }
 
   cargarJsonUser();
 
-	
 
-  
+
   
   login.addEventListener("click", function (event) {
     event.preventDefault(); // Evita la recarga de la página
@@ -87,3 +90,9 @@ document
     console.log("Redirigiendo...");
     window.location.href = "../pages/agendamiento.html";
   });
+
+
+
+
+
+  

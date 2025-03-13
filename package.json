@@ -1,0 +1,20 @@
+{
+  "name": "taller2ntd",
+  "version": "1.0.0",
+  "description": "Página Web De Tutorias virtuales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrlyDev/taller2ntd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrlyDev/taller2ntd/issues"
+  },
+  "homepage": "https://github.com/ChrlyDev/taller2ntd#readme"
+}
