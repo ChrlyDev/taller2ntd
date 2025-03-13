@@ -51,22 +51,39 @@ document
   }
 
   cargarJsonUser();
-  
+
 	
 
-  login.addEventListener("click", function () {
-
-	const email = emailLogin.value;
-	const password = passwordLogin.value;
   
-	users.forEach(user => {
-	  if (user.email === email && user.password === password){
-		console.log(user);
-		alert("Usuario logueado correctamente");
-		  
-		window.location.href = '../index.html';	
-		
-	  }
-
+  
+  login.addEventListener("click", function (event) {
+    event.preventDefault(); // Evita la recarga de la página
+  
+    const email = emailLogin.value.trim();
+    const password = passwordLogin.value.trim();
+  
+    // Validación de campos vacíos
+    if (email === "" || password === "") {
+      alert("❌ Ingresa un correo y una contraseña.");
+      return;
+    }
+  
+    // Buscar usuario en la lista
+    const user = users.find((u) => u.email === email);
+  
+    if (!user) {
+      alert("❌ El usuario no existe.");
+      return;
+    }
+  
+    // Verificar contraseña
+    if (user.password !== password) {
+      alert("❌ Contraseña incorrecta.");
+      return;
+    }
+  
+    // Usuario autenticado correctamente
+    alert("✅ Usuario logueado correctamente");
+    console.log("Redirigiendo...");
+    window.location.href = "../pages/agendamiento.html";
   });
-});
