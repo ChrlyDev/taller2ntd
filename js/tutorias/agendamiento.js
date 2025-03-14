@@ -162,7 +162,6 @@ function leerTutorias() {
             fila.appendChild(celda);
         });
 
-        // Agregar botón de agendar
         const celdaAccion = document.createElement('td');
         const botonAgendar = document.createElement('button');
         botonAgendar.textContent = tutoria.asignada ? "Agendada" : "Agendar";
@@ -179,7 +178,7 @@ function agendarTutoria(id) {
     const tutoria = tutoriasDatos.tutorias.find(t => t.id === id);
     if (tutoria && confirm(`¿Estás seguro de agendar la tutoría de ${tutoria.tema} con ${tutoria.tutor}?`)) {
         tutoria.asignada = true;
-        leerTutorias(); // Actualizar la tabla
+        leerTutorias(); 
     }
 }
 
