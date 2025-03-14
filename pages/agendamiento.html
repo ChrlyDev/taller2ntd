@@ -1,56 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Doble T - Tutorias Virtuales</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script
-          src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-          crossorigin="anonymous"
-        ></script>
-        <!-- Google fonts-->
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
-      </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Doble T - Tutorias Virtuales</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
 <body>
-
     <div id="wrapper-dashboard-tutorias">
         <h1>Agenda tutorias</h1>
         <div class="dashboard-tutorias">
+          <div class="table-container">
             <table id="tutorias-table">
                 <thead>
                     <tr>
                         <th>Fecha</th>
                         <th>Tema</th>
                         <th>Tutor</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!--En este espacio se insertaran los datos de las tutorias-->
+                    <!-- En este espacio se insertarán los datos de las tutorías -->
                 </tbody>
             </table>
         </div>
+        </div>
     </div>
     
-    <script src="../data/tutorias.json"></script>
     <script src="../js/tutorias/agendamiento.js"></script>
 </body>
 </html>
