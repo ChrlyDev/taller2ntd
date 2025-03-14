@@ -12648,7 +12648,7 @@ p {
   border-radius: 100%;
 }
 
-#mainNav {
+#mainNav  {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #212529;
@@ -13129,21 +13129,24 @@ header.masthead .masthead-heading {
 
 #wrapper-dashboard-tutorias {
   display: flex;
+  position: relative;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   margin: auto;
   width: 100%;
-  height: 100vh;
-  background-color: red;
+  height: 90vh;
+  background-color: #e8e8e8;
+  margin-top: 50px; /* Ajusta este valor según la altura de tu navbar */
+
 }
 
 .dashboard-tutorias {
   display: grid;
   width: 90%;
   height: 80%;
-  background-color: blue;
+  background-color: white;
 }
 
 .footer {
@@ -13153,7 +13156,7 @@ header.masthead .masthead-heading {
 }
 
 .table-container {
-  height: 600px; 
+  height: 700px; 
   overflow-y: auto; 
   border: 1px solid #ddd; 
   border-radius: 8px; 
@@ -13197,7 +13200,7 @@ header.masthead .masthead-heading {
 
 #tutorias-table button {
   padding: 8px 12px; 
-  background-color: #3498db; 
+  background-color: #ffc800; 
   color: #fff; 
   border: none;
   border-radius: 4px; 
@@ -13212,5 +13215,97 @@ header.masthead .masthead-heading {
 }
 
 #tutorias-table button:not(:disabled):hover {
-  background-color: #2980b9; 
+  background-color: #ffe100; 
+}
+
+
+
+#navbarAgendamiento {
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 40px;
+}
+
+#userNameDisplay {
+  margin-top:40px;
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffc800;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
