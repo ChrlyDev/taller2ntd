@@ -49,7 +49,7 @@ document
 	  })
 	  .then(function (data) {
 		users.push(...data.users); 
-	
+
 	  })
 	  .catch(error => console.error("Error al cargar el JSON:", error));
   }
