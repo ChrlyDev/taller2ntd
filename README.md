@@ -1,4 +1,6 @@
 🎯 Taller 2 - NTD
+Introducción:
+El desarrollo web es una habilidad fundamental en el mundo de la tecnología, permitiendo la creación de plataformas interactivas y funcionales. En este proyecto, se desarrollará un sitio web para la gestión y el agendamiento de tutorías académicas. Esta plataforma permitirá a los usuarios visualizar la información del sitio, registrarse e iniciar sesión, agendar tutorías y consultar las tutorías previamente agendadas. A través de este ejercicio, los integrantes del equipo fortalecerán sus habilidades en HTML, CSS y JavaScript, además de la colaboración en entornos de desarrollo compartido como GitKraken. 
 
 📚 Página Web de Tutorías Virtuales
 
