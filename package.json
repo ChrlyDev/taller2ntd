@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Página Web De Tutorias virtuales",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon ./js/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +17,5 @@
   "bugs": {
     "url": "https://github.com/ChrlyDev/taller2ntd/issues"
   },
-  "homepage": "https://github.com/ChrlyDev/taller2ntd#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9"
-  }
+  "homepage": "https://github.com/ChrlyDev/taller2ntd#readme"
 }
