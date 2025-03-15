@@ -273,13 +273,7 @@ const tutoriasDatos = {
             "fecha-hora": "2025-09-20 02:00 PM",
             "asignada": false
         },
-        {
-            "id": 40,
-            "tutor": "Luis",
-            "tema": "Dibujo artístico",
-            "fecha-hora": "2025-09-25 04:30 PM",
-            "asignada": true
-        }
+        
     ]
 };
 
